@@ -12,8 +12,8 @@ export function Contact() {
       e.preventDefault();
   
       emailjs
-        .sendForm(process.env.SERVICE_KEY, process.env.TEMPLATE_KEY, form.current, {
-          publicKey: process.env.PUBLIC_KEY,
+        .sendForm(process.env.REACT_APP_SERVICE_KEY, process.env.REACT_APP_TEMPLATE_KEY, form.current, {
+          publicKey: process.env.REACT_APP_PUBLIC_KEY
         })
         .then(
           () => {
